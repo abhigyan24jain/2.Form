@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.1.css">
+    <title>Thank You</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="div1" class="fa"></div>
+        <span class="submit"><br>&ensp;Your Response has Submitted</span>
+        <!-- <div class="submit">Your Response has Submitted</div> -->
+        <div class="thank">Thank You<br>For Your Response.
+        </div>
+    </div>
+
+</body>
+<script>
+    function hourglass() {
+        var a;
+        a = document.getElementById("div1");
+        a.innerHTML = "&#xf058;";
+        setTimeout(function() {
+            a.innerHTML = `<span style="font-size:46px">&#xf00c;`;
+        }, 1000);
+        setTimeout(function() {
+            a.innerHTML = "&#xf058;";
+        }, 2000);
+    }
+    hourglass();
+    setInterval(hourglass, 3000);
+</script>
+
+</html>
